@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/container_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/rela1"/>
+
+        <LinearLayout
+            android:id="@+id/llnen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_menu"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/pre"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/home"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+
+                    ></ImageView>
+
+
+
+                <include
+
+                    android:id="@+id/tool"
+                    layout="@layout/bar"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/marginr"
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+
+                   />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </android.support.v4.view.ViewPager>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+      <fragment
+          android:id="@+id/fragment_navigation_drawer"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:name="com.example.mrson.menudemo.FragmentDrawer"
+          android:layout_gravity="start"
+          tools:layout="@layout/fragment_navigation_drawer">
+
+      </fragment>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

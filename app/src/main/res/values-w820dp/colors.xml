@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="textColor">#FFF</color>
+    <color name="textFieldColor">#000</color>
+    <color name="textShadow">#FFF</color>
+    <color name="listViewBg">#DADFEE</color>
+
+    <color name="sendLightColor">#8897BF</color>
+    <color name="sendMeduimColor">#5D6CA5</color>
+    <color name="sendDarkColor">#515F9F</color>
+
+    <color name="barDarkColor">#CECECE</color>
+    <color name="barMeduimColor">#DFDEE0</color>
+    <color name="barLightColor">#F2F2F2</color>
+
+    <color name="black">#000</color>
+    <color name="grey">#6E6E6E</color>
+    <color name="transparent">#00000000</color>
+    <color name="sliding_menu_bg">#BF666666</color>
+    <color name="facebook">#3b5999</color>
+    <color name="twitter">#01bbf6</color>
+    <color name="share">#5b9139</color>
+    <color name="list_selector">#BF424242</color>
+    <color name="facebook_pressed">#4a6eba</color>
+    <color name="twitter_pressed">#66ccff</color>
+    <color name="share_pressed">#6cac44</color>
+</resources>

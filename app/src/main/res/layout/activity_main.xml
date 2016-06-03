@@ -1,0 +1,96 @@
+<com.example.mrson.menudemo.MainLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+  >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        ////////////////////////////////////////////
+        <include layout="@layout/menubar"></include>
+        ////////////////////////////////////////////
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- This acts as Actionbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3090C7"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+            <ImageView
+
+                android:id="@+id/button_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/menu_caloo"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+
+
+
+                ></ImageView>
+
+
+            <com.example.mrson.menudemo.tabbar.TabBar
+
+
+                android:id="@+id/tab_bar"
+
+                android:scaleType="centerCrop"
+                android:cropToPadding="true"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+
+
+
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rela1">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                />
+
+        </RelativeLayout>
+        <!-- This is where fragment will show up -->
+        <FrameLayout
+            android:id="@+id/activity_main_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</com.example.mrson.menudemo.MainLayout>

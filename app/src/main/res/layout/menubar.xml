@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ff657383"
+    android:id="@+id/menubar"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff657383"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <com.example.mrson.menudemo.peoples.CircleImageView
+
+
+            android:src="@drawable/p6"
+            android:id="@+id/avatar"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            app:border_color="#ffffff"
+            app:border_width="1.5dp"
+
+           />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:text="Nguyen Thai Son"
+            android:textColor="#ffffff"
+
+           />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_menu"
+                android:text="Test"
+                android:textColor="#999999"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb"
+        android:orientation="horizontal"
+        android:background="#ff657383"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/no_zalo"/>
+
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notice_id"
+        android:text="Thông báo"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+       />
+    </LinearLayout>
+    <TextView
+        android:background="#999999"
+        android:layout_width="250dp"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stick"
+        android:orientation="horizontal"
+        android:background="#ff657383"
+        android:padding="10dp"
+       >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/stick_za"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Stickers"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="#999999"
+        android:layout_width="250dp"
+        android:layout_height="0.05dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting"
+        android:orientation="horizontal"
+        android:background="#ff657383"
+        android:padding="10dp"
+       >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/set_zalo"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Cài đặt riêng tư"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="#999999"
+        android:layout_width="250dp"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tl"
+        android:orientation="horizontal"
+        android:background="#ff657383"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/se_za"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Thiết lập"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="#999999"
+        android:layout_width="250dp"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp"
+        android:orientation="horizontal"
+        android:background="#ff657383"
+        android:padding="10dp"
+       >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/danhsach"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Sản phẩm"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="#999999"
+        android:layout_width="250dp"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/m"
+        android:orientation="horizontal"
+        android:background="#ff657383"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/computer_zalo"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Các máy tính đăng nhập"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="#999999"
+        android:layout_width="250dp"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/md"
+        android:orientation="horizontal"
+        android:background="#ff657383"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/key_zalo"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Quản lý tài khoản"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="#999999"
+        android:layout_width="250dp"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+
+        android:background="#ff657383">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/bong"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bình chọn cho phiên bản mới"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

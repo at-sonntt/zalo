@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ll_title"
+
+        android:background="#3090C7">
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/home"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_toRightOf="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binh Luan"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:textSize="17dp"
+
+
+            android:paddingLeft="20dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/action_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+
+
+           />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="35dp"
+        android:padding="5dp"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+
+            android:id="@+id/llc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin"
+            android:layout_marginRight="@dimen/feed_item_margin"
+
+
+            android:orientation="vertical"
+
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="status test"
+
+                    android:id="@+id/status">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300px"
+                    android:id="@+id/img"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/url"
+                    android:textColor="#0a80d1"
+                    android:linksClickable="true"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#BBBBBB"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:layout_marginBottom="-7dp"
+
+
+                >
+
+
+                <TextView
+                    android:id="@+id/total_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:textColor="#999999"
+                    android:padding="3dp"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 giờ trước"
+                    android:layout_marginLeft="40dp"
+
+                    android:textSize="13dp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/ll_title">
+        <com.example.mrson.menudemo.peoples.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/avar"
+
+            app:border_color="@color/feed_bg"
+            app:border_width="3dp"
+            android:src="@drawable/p3"
+
+
+
+            >
+
+        </com.example.mrson.menudemo.peoples.CircleImageView>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/feed_item_profile_name"
+            android:textStyle="bold"
+            android:fontFamily="Arial"
+            android:textColor="#000000"
+            android:text="test"/>
+    </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+
+        android:id="@+id/center"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="@dimen/feed_item_margin"
+       >
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_fresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_coment"
+            android:background="#fff">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:padding="10dp"
+      >
+
+        <com.example.mrson.menudemo.peoples.CircleImageView
+            android:id="@+id/like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/heart"
+            android:layout_centerVertical="true"
+            android:background="@drawable/like_bo"
+            android:paddingRight="10dp"
+            />
+       <com.example.mrson.menudemo.peoples.CircleImageView
+           android:id="@+id/feel"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@mipmap/smile"
+           android:layout_toRightOf="@+id/like"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+
+           />
+        <EditText
+            android:id="@+id/ed_cmt"
+            android:inputType="text"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/feel"
+            android:hint="Nhập bình luận"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/ed_cmt"
+            android:layout_centerVertical="true"
+            android:background="#fff"
+            android:id="@+id/ll_enter">
+        <ImageView
+            android:id="@+id/bnt_enter"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/enter_i"
+
+            android:layout_centerVertical="true"
+            />
+       </LinearLayout>
+
+
+        
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#fff">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/layout1"
+        android:layout_margin="5dp"
+        >
+
+        <com.example.mrson.menudemo.peoples.CircleImageView
+            android:id="@+id/icon"
+            android:src="@mipmap/shakehands"
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            />
+        <TextView
+            android:id="@+id/text"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_toLeftOf="@+id/action"
+            android:layout_alignBottom="@+id/icon"
+            android:layout_alignTop="@+id/icon"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+
+            android:text="Gợi ý kết bạn"
+            android:textSize="9pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:layout_alignTop="@+id/text"
+            android:layout_alignBottom="@+id/text"
+            android:id="@+id/action"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_chevron_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/line1"
+        android:background="#DADADC"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <RelativeLayout
+        android:layout_below="@+id/line1"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        >
+
+        <com.example.mrson.menudemo.peoples.CircleImageView
+            android:id="@+id/icon2"
+
+            android:src="@mipmap/ic_favourit"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_toRightOf="@+id/icon2"
+            android:layout_toLeftOf="@+id/action2"
+            android:layout_alignBottom="@+id/icon2"
+            android:layout_alignTop="@+id/icon2"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Danh sách quan tâm"
+            android:textSize="9pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignTop="@+id/text2"
+            android:layout_alignBottom="@+id/text2"
+            android:id="@+id/action2"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_chevron_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line2"
+        android:background="#DADADC"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:layout_below="@+id/line2"
+        android:layout_margin="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout3"
+        >
+
+        <com.example.mrson.menudemo.peoples.CircleImageView
+            android:id="@+id/icon3"
+
+            android:src="@mipmap/team_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_toRightOf="@+id/icon3"
+            android:layout_toLeftOf="@+id/action3"
+            android:layout_alignBottom="@+id/icon3"
+            android:layout_alignTop="@+id/icon3"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Danh sách nhóm"
+            android:textSize="9pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignTop="@+id/text3"
+            android:layout_alignBottom="@+id/text3"
+            android:id="@+id/action3"
+
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_chevron_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+
+
+        android:layout_below="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="1dp"
+        >
+        <ListView
+            android:background="#fff"
+            android:id="@+id/expandlistview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

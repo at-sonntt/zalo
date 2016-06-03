@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#3090C7"
+    >
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/img_left"
+        android:src="@mipmap/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/txt_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/img_left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Thêm bạn"
+        android:textColor="#FFFFFF"
+        android:textSize="18.5sp"
+        android:layout_centerVertical="true"
+        />
+
+
+
+</RelativeLayout>
